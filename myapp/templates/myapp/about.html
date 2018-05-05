@@ -1,0 +1,165 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>我が家族は変わってる</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'myapp/vendor/bootstrap/css/bootstrap.min.css' %}"rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'myapp/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'myapp/css/clean-blog.min.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'myapp:index' %}">我が家族は変わってる</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+           <li class="nav-item">
+              <a class="nav-link" href="{% url 'myapp:index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'myapp:about' %}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'myapp:Contribution' %}">Contribution</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'myapp:episode' %}">episode</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'myapp:contact' %}">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/about-bg.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>このサイトについて</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+              <h2 class="post-title">
+                「我が家族は変わってる」について
+              </h2>
+              <p>
+                <a href=https://oreno-yome.com/>「俺の嫁がかわいい」</a>サイトにインスピレーションを受けて作ったサイトです。<br>自分の家族の変わってるかもしれないエピソードやルールを投稿して、<br>普段聞けない他の家庭事情を垣間見るサイトです。
+              </p>
+         </div>
+          <hr>
+<br>
+          <div class="post-preview">
+              <h2 class="post-title">
+                ご利用上の注意
+              </h2>
+                 <p>個人が特定できるような投稿や単なる誹謗中傷の投稿禁止。<br /> また、自分の家族以外についての投稿禁止。</p> <p>以下の点を守った上でご利用ください。<br /> &#8211; 個人が特定できるような投稿は禁止。<br /> &#8211; 誹謗中傷は禁止。<br /> &#8211; 犯罪予告、薬物売買、児童買春などの書き込み禁止。<br /> 上記に該当する投稿や、管理人が不適切と判断した投稿は削除及び編集を加えることがあります。<br /> また、当サイトの利用や閲覧によって生じた損害や被害などについては管理人は一切責任を負いません。<br /> 詳細は<a href="kiyaku.html">利用規約</a>をご参照ください。
+              </p>
+          </div>
+          <hr>
+<br>
+          <div class="post-preview">
+              <h2 class="post-title">
+                運営者について
+              </h2>
+              <p>
+                独身会社員(男)が個人的に運営しています。<br><br>将来結婚したときの参考にとも思っています。
+              </p>
+          </div>
+          <hr>
+<br>
+          <hr>
+          <!-- Pager -->
+<br>
+          <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">ページ上部へ &uarr;</a>
+          </div>
+        </div>
+      </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+<!--            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+-->
+            <p class="copyright text-muted">Copyright &copy; 我が家族は変わってる 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'myapp/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'myapp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'myapp/js/clean-blog.min.js' %}"></script>
+
+  </body>
+
+</html>
